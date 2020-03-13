@@ -21,13 +21,14 @@ Workflow:
 1. A lambda function to create Qualys specific insights in AWS Security Hub.
 2. This template will create a Lambda execution role in IAM. This role is granted with permission based on "Least Privilege Principle" to create only Insights within Security hub. This is a service role which will be associated with the Lambda function created as mentioned in #1.
 3. After invocation of the Lambda function, insights will be created within AWS security hub.
-for eg:  (i)   A user has enabled Qualys: Vulnerability Management product in AWS security Hub in N Virginia (us-east-1) region.
+
+for eg:  ***(i)   A user has enabled Qualys: Vulnerability Management product in AWS security Hub in N Virginia (us-east-1) region.
          (ii)  User raises request to Qualys support for enabling Qualys Integration with AWS Security Hub (Please refer the Link for
          more details about enabling Qualys Integration with AWS Security Hub)
          (iii) Ensure, Qualys Vulnerability findings are available within security hub.
          (iv)  Deploy the cloud formation template provided to create Qualys specific insights in Security Hub.
          (v)   4 insights specific to Qualys will be created i.e "Instances with Critical vulnerabilities from Qualys", "Instances with
                Exploitable Vulnerabilities from Qualys", "Instances with missing patches from Qualys" and "AMIs with highest number
-               of Vulnerabilities from Qualys". These insights can be viewed in "Insights" section in AWS Security Hub.
+               of Vulnerabilities from Qualys". These insights can be viewed in "Insights" section in AWS Security Hub.***
 
 
