@@ -1,2 +1,3 @@
-# AWS
-All AWS related scripts and templates
+# Create Qualys Insights in AWS Security Hub
+
+
