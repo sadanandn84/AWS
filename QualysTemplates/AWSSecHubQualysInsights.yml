@@ -31,10 +31,10 @@ Resources:
             filters_4 = {'RecordState':[{ 'Value': 'ACTIVE', 'Comparison':'EQUALS'},],
            'CompanyName':[{'Value':'Qualys', 'Comparison':'EQUALS'}]}
 
-            insight_response_1 = sec_hub_client.create_insight(Name="Instances with Critical vuln-Qualys", Filters=filters_1, GroupByAttribute='ResourceType')
-            insight_response_2 = sec_hub_client.create_insight(Name='Instances with Exploitable Vuln-Qualys', Filters=filters_2, GroupByAttribute='ResourceType')
-            insight_response_3 = sec_hub_client.create_insight(Name='Instances with missing patches-Qualys', Filters=filters_3, GroupByAttribute='ResourceType')
-            insight_response_4 = sec_hub_client.create_insight(Name='AMIs with highest number of Vulns-Qualys', Filters=filters_4, GroupByAttribute='ResourceAwsEc2InstanceImageId')
+            insight_response_1 = sec_hub_client.create_insight(Name="Instances with Critical Vulnerabilities from Qualys", Filters=filters_1, GroupByAttribute='ResourceType')
+            insight_response_2 = sec_hub_client.create_insight(Name='Instances with Exploitable Vulnerabilities from Qualys', Filters=filters_2, GroupByAttribute='ResourceType')
+            insight_response_3 = sec_hub_client.create_insight(Name='Instances with missing patches from Qualys', Filters=filters_3, GroupByAttribute='ResourceType')
+            insight_response_4 = sec_hub_client.create_insight(Name='AMIs with highest number of Vulnerabilities from Qualys', Filters=filters_4, GroupByAttribute='ResourceAwsEc2InstanceImageId')
             responseData = {}
             cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData)
       Description: Lambda Function to create a Qualys Insights in AWS Security Hub
