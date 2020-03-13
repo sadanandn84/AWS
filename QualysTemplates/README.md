@@ -27,6 +27,6 @@ for eg:
 - User raises request to Qualys support for enabling Qualys Integration with AWS Security Hub (Please refer the Link for more details about enabling Qualys Integration with AWS Security Hub)
 - Ensure, Qualys Vulnerability findings are available within security hub.
 - Deploy the cloud formation template provided to create Qualys specific insights in Security Hub.
-- 4 insights specific to Qualys will be created i.e **"Instances with Critical vulnerabilities from Qualys"**, **"Instances with Exploitable Vulnerabilities from Qualys"**, **"Instances with missing patches from Qualys"** and **"AMIs with highest number of Vulnerabilities from Qualys"**. These insights can be viewed in **"Insights"** section in AWS Security Hub.
+- 4 insights specific to Qualys will be created i.e **"Instances with Critical Vulnerabilities from Qualys"**, **"Instances with Exploitable Vulnerabilities from Qualys"**, **"Instances with missing patches from Qualys"** and **"AMIs with highest number of Vulnerabilities from Qualys"**. These insights can be viewed in **"Insights"** section in AWS Security Hub.
 
 
